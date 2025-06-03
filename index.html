@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stem fesc</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <!-- Sección que aísla la navbar del fondo general -->
+  <section id="navbar-section" style="position: relative; z-index: 1000;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Stem Fesc</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#actividades">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ubicacion">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#redes">Redes Sociales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#miembros">Miembros</a>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+
+  <!-- Sección: Bienvenidos a STEM FESC -->
+  <section id="hero" class="d-flex align-items-center" style="height: 100vh;">
+    <div class="overlay" style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 0;
+      "></div>
+
+    <div class="container main-content">
+      <div class="row align-items-center">
+        <!-- Columna de texto -->
+        <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+          <h1 class="display-4 fw-bold mb-3">Bienvenidos a <span class="text-primary">STEM FESC</span></h1>
+          <p class="lead mb-4">
+            Ciencia, Astronomía, Programación y Robótica al alcance de todos
+          </p>
+          <a href="#sobre" class="btn btn-lg btn-primary">Conócenos</a>
+        </div>
+
+
+        <!-- Columna de video -->
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <video src="Imagenes/test.mp4" class="img-fluid rounded shadow-lg" style="max-width: 90%;" autoplay
+            loop></video>
+          </video>
+        </div>
+  </section>
+
+
+  <!--seccion quienes somos-->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna de texto -->
+        <div class="col-lg-6 mb-4" data-aos="fade-right">
+          <h2 class="text-white fw-bold mb-3">Qué es <span class="text-primary">STEM FESC</span></h2>
+          <p class="text-light fs-5">
+            <strong>STEM FESC</strong> Es un equipo de profesionistas en formación provenientes de diversas carreras
+            de la Facultad de Estudios Superiores Cuautitlán, UNAM. Cuenta con las areas de:
+          </p>
+          <ul class="list-group list-group-flush mb-3 text-white ">
+            <li class="list-group-item mb-2  bg-transparent text-white">
+              <i class="bi bi-check-circle text-primary me-2"></i>
+              Talleres prácticos de <strong>Astronomía</strong> (observación, software de seguimiento, fotografía
+              astronómica).
+            </li>
+            <li class="list-group-item mb-2 text-white bg-transparent">
+              <i class="bi bi-check-circle text-primary me-2"></i>
+              Clases y proyectos de <strong>Programación</strong> en Python, JavaScript y tecnologías web modernas.
+            </li>
+            <li class="list-group-item mb-2 text-white bg-transparent">
+              <i class="bi bi-check-circle text-primary me-2"></i>
+              Proyectos de <strong>Robótica</strong> con Arduino, ESP32 y visión artificial para crear prototipos
+              reales.
+            </li>
+            <li class="list-group-item mb-2 text-white bg-transparent">
+              <i class="bi bi-check-circle"></i>
+              Charlas y conferencias con expertos en áreas STEM para conectar teoría y práctica.
+            </li>
+            <li class="list-group-item mb-2 text-white bg-transparent">
+              <i class="bi bi-check-circle"></i>
+              Creacion de cansats
+            </li>
+          </ul>
+          <p class="text-light fs-6">
+            Colaboramos con universidades, laboratorios y empresas tecnológicas para ofrecer recursos
+            y mentorías que impulsen el aprendizaje activo, la experimentación y la innovación.
+            ¡Únete a nuestra comunidad y forma parte de la próxima generación de creadores e innovadores!
+          </p>
+          <a href="#actividades" class="btn btn-lg btn-primary mt-2">Ver actividades</a>
+        </div>
+
+        <!-- Columna de imagen/ilustración -->
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <div class="card bg-transparent border-0">
+            <img src="Imagenes/grupo_1.jpeg" class="img-fluid rounded shadow-lg" alt="Ilustración STEM FESC" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--seccion actividades-->
+  <section id="actividades" class="py-5">
+    <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="container">
+        <h2 class="text-white mb-4">Nuestras Actividades</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="fade-up" data-aos-delay="100">
+              <img src="Imagenes/semana_cosmonautica.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Semana de la cosmonautica</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="fade-up" data-aos-delay="200">
+              <img src="Imagenes/noche_estrellas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">noche de las estrellas</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="fade-up" data-aos-delay="300">
+              <img src="Imagenes/congreso_proyectos.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Congreso de proyectos</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="fade-up" data-aos-delay="400">
+              <img src="Imagenes/proyeccion_peliculas.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Proyeccion de peliculas</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--seccion mapa-->
+
+  <section id="ubicacion" class="py-5">
+    <div class="container">
+      <h2 class="text-white text-center mb-4">Nuestra Ubicación</h2>
+      <div class="row">
+        <!-- Columna izquierda: dos botones -->
+        <div class="col-md-4 d-flex flex-column">
+          <button type="button" class="btn btn-primary mb-3" data-aos="fade-right" data-aos-delay="100"
+            onclick="cambiarC1()">
+            Campo 1
+          </button>
+          <button type="button" class="btn btn-secondary mb-3" onclick="cambiarC4()" data-aos="fade-right"
+            data-aos-delay="200">
+            Campo 4
+          </button>
+        </div>
+
+        <!-- Columna derecha: mapa con Leaflet -->
+        <div class="col-md-8">
+          <div id="map" data-aos="fade-left" data-aos-delay="300"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--seccion miembros-->
+  <section id="miembros" class="py-5">
+    <div class="container-fluid overflow-auto" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="container">
+        <h2 class="text-white mb-4">Miembros</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Imagenes/ari.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Aritzell Martell</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Imagenes/default.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Dany Skinfield</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Imagenes/joaquin(2).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Joaquin Amezcua</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Imagenes/default.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Luis Tenorio</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Imagenes/default.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Alba León</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Imagenes/default.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Luis Tenorio</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Imagenes/elgusdm.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-white">Gustavo Munguia</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección: Redes Sociales -->
+  <section id="redes" class="py-5">
+    <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.5);">
+      <div class="container text-center">
+        <h2 class="text-white mb-4">Síguenos en Redes Sociales</h2>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <a class="link-light" href="https://www.facebook.com/people/STEM-FESC/61568259396270/?_rdr">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="link-light" href="https://t.me/+6XlCrXhymjxjNTRh">
+              <i class="bi bi-telegram fs-1"></i>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="link-light" href="https://www.instagram.com/stem.fesc">
+              <i class="bi bi-instagram fs-1"></i>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="link-light" href="https://www.tiktok.com/@stem.fesc?is_from_webapp=1&sender_device=pc">
+              <i class="bi bi-tiktok fs-1"></i>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a class="link-light" href="https://www.whatsapp.com/channel/0029Vb58wf9ElagtOTOgiG1S">
+              <i class="bi bi-whatsapp fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+
+
+    var map = L.map("map").setView([19.637036769118815, -99.20785050208028], 20);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "...",
+    }).addTo(map);
+    L.marker([19.69346263478449, -99.18990935263753])
+      .addTo(map)
+      .bindPopup("Campo 4")
+      .openPopup();
+    function cambiarC1() {
+      map.setView([19.637036769118815, -99.20785050208028], 20);
+      L.marker([19.637036769118815, -99.20785050208028])
+        .addTo(map)
+        .bindPopup("Campo 1")
+        .openPopup();
+
+    }
+
+    function cambiarC4() {
+      map.setView([19.69346263478449, -99.18990935263753], 20);
+      L.marker([19.69346263478449, -99.18990935263753])
+        .addTo(map)
+        .bindPopup("Campo 4")
+        .openPopup();
+
+    }
+  </script>
+</body>
+
+</html>
