@@ -150,6 +150,12 @@ section {
     color: #222;
 }
 
+/* video */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Miembros */
 #miembros .card-img-top {
