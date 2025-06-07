@@ -93,6 +93,16 @@ p {
     color: #222;
 }
 
+/*redes sociales*/
+#redes .bi {
+    transition: color 0.2s, transform 0.2s;
+}
+
+#redes .bi:hover {
+    color: #0dcaf0;
+    transform: scale(1.2);
+}
+
 section {
     position: relative;
     z-index: 1;
