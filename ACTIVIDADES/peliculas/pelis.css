@@ -22,6 +22,7 @@ p {
 
 .container {
     padding: 2rem;
+    justify-content: center;
 }
 
 /* Navbar */
@@ -59,6 +60,38 @@ p {
     filter: drop-shadow(0 0 8px #0dcaf0);
 }
 
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    /* Ancho menor al 100% */
+    max-width: 600px;
+    /* Límite máximo */
+
+}
+
+
+.btn-primary,
+.btn-secondary {
+    border-radius: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(13, 202, 240, 0.12);
+    transition: background 0.2s, color 0.2s;
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background: #0dcaf0;
+    color: #222;
+}
 
 section {
     position: relative;
