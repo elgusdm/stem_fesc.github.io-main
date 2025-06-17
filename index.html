@@ -153,14 +153,19 @@
         <h2 class="text-white mb-4">Nuestras Actividades</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <a href="ACTIVIDADES/semana/semana-cosmo.html" style="text-decoration: none;">
-              <div class="card h-100 bg-dark bg-opacity-50" data-aos="fade-up" data-aos-delay="100">
-                <img src="Imagenes/semana_cosmonautica.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-white">Semana de la cosmonautica</h5>
+            <div class="card h-100 bg-dark bg-opacity-50" data-aos="fade-up" data-aos-delay="200">
+              <img src="Imagenes/semana_cosmonautica.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <button id="toggle-btn" style="display: block; width: 200px; margin: 0 auto;"
+                  class="btn btn-primary btn-lg">Semana de la cosmonautica </button>
+                <div id="info-panel" class="info-panel">
+                  <h3>Que es?</h3>
+                  <p>
+                    La Semana de la Cosmonautica es un evento
+                  </p>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
           <div class="col">
             <a href="ACTIVIDADES/nocheestrellas/noche.html" style="text-decoration: none;">
@@ -391,6 +396,22 @@
         .openPopup();
 
     }
+
+    const toggleBtn = document.getElementById('toggle-btn');
+    const infoPanel = document.getElementById('info-panel');
+    let isVisible = false;
+
+    toggleBtn.addEventListener('click', function () {
+      if (isVisible) {
+        infoPanel.style.display = 'none';
+        toggleBtn.textContent = 'Mostrar información';
+        isVisible = false;
+      } else {
+        infoPanel.style.display = 'block';
+        toggleBtn.textContent = 'Ocultar información';
+        isVisible = true;
+      }
+    });
   </script>
 </body>
 

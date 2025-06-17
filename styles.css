@@ -151,6 +151,16 @@ section {
     color: #222;
 }
 
+/*Prueba actividad boton*/
+.info-panel {
+    display: none;
+    padding: 20px;
+    background-color: rgba(13, 202, 240, 0.12);
+    margin-top: 10px;
+    border-radius: 2rem;
+}
+
+
 /* video */
 video {
     max-width: 100%;
