@@ -157,7 +157,8 @@
               <img src="Imagenes/semana_cosmonautica.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <button id="toggle-btn" style="display: block; width: 200px; margin: 0 auto;"
-                  class="btn btn-primary btn-lg">Semana de la cosmonautica</button>
+                  class="btn btn-primary btn-lg" data-alternate-text="Ocultar información">Semana de la
+                  cosmonautica</button>
                 <div id="info-panel" class="info-panel">
                   <h3>Que es?</h3>
                   <p>
@@ -399,18 +400,19 @@
 
     const toggleBtn = document.getElementById('toggle-btn');
     const infoPanel = document.getElementById('info-panel');
+    const originalBtnText = toggleBtn.textContent;
+    const alternateText = toggleBtn.dataset.alternateText;
     let isVisible = false;
 
     toggleBtn.addEventListener('click', function () {
       if (isVisible) {
         infoPanel.style.display = 'none';
-        toggleBtn.textContent = 'Mostrar información';
-        isVisible = false;
+        toggleBtn.textContent = originalBtnText;
       } else {
         infoPanel.style.display = 'block';
-        toggleBtn.textContent = 'Ocultar información';
-        isVisible = true;
+        toggleBtn.textContent = alternateText;
       }
+      isVisible = !isVisible; // Alterna el estado de visibilidad
     });
   </script>
 </body>
