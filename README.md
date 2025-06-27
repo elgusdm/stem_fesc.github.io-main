@@ -1,4 +1,4 @@
-# stem_fesc.github.io
+# stem_fesc
 <img src="/Imagenes/logo.png" alt="STEM FESC" align="center" width="150">
 
 PAGINA OFICIAL
