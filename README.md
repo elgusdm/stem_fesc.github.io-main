@@ -21,5 +21,6 @@ Somos un equipo de profesionistas en formación provenientes de diversas carrera
 PROYECTO COLABORATIVO
 
 Este proyecto se trabaja en conjunto con mi companero Joaquin, igual miembro de la STEM trabajamos de manera conjunta en este repositorio que es ambiente de pruebas y el suyo que es la pagina oficial: 
+
 [GitHub Joaquin Amezcua](https://github.com/Nightdragoon/stem_fesc.github.io)
 
