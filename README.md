@@ -5,7 +5,7 @@ PAGINA OFICIAL
 
 [STEM FESC](https://stemfesc.com.mx/)
 
-STEM FESC UAUTITLAN
+STEM FESC CUAUTITLAN
 Somos un equipo de profesionistas en formación provenientes de diversas carreras de la Facultad de Estudios
             Superiores Cuautitlán UNAM.
             
