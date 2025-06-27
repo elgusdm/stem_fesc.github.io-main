@@ -16,7 +16,7 @@ Somos un equipo de profesionistas en formación provenientes de diversas carrera
              > CanSats
              > Divulgación científica
              > Coheteria Experimental
-            Nos proponemos retos y competimos en diversas convocatorias relacionadas a nuestras áreas, para conseguir un aprendizaje extracurricular, al igual que colaboramos con universidades, laboratorios y empresas tecnológicas para ofrecer recursos y mentorías que impulsen la experimentación innovación y tecnoética.
+
 
 PROYECTO COLABORATIVO
 
