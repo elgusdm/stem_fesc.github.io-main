@@ -2,7 +2,7 @@
 
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^PAGINA OFICIAL^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-                                          STEM FESC: https://stemfesc.com.mx/
+                                          [STEM FESC] (https://stemfesc.com.mx/)
 
 ---------------------------------------------STEM FESC-------------CUAUTITLAN-------------------------------------------------------
             Somos un equipo de profesionistas en formación provenientes de diversas carreras de la Facultad de Estudios
@@ -20,4 +20,4 @@
 
             Este proyecto se trabaja en conjunto con mi companero Joaquin, igual miembro de la STEM
             trabajamos de manera conjunta en este repositorio que es ambiente de pruebas y el suyo que es 
-            la pagina oficial: https://github.com/Nightdragoon/stem_fesc.github.io
+            la pagina oficial: [GitHub Joaquin Amezcua] (https://github.com/Nightdragoon/stem_fesc.github.io)
