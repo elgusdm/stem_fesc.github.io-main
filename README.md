@@ -1,6 +1,5 @@
 # stem_fesc.github.io
-
- ^^^STEM FESC^^^
+![STEM FESC](/Imagenes/logo.png)
 
 PAGINA OFICIAL
 
